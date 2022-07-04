@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Region.Mapa">
+    <ContentPage.Content>
+        <StackLayout>
+            <maps:Map x:Name="Maps" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" IsShowingUser="True"/>
+            <FlexLayout>
+                <Label x:Name="txtLati"  Text="{Binding latitud}" TextColor="Black" IsVisible="False"/>
+                <Label x:Name="txtLong"  Text="{Binding longitud}" TextColor="Black" IsVisible="False"/>
+                <Label x:Name="txtNomp"  Text="{Binding nombre}" TextColor="Black"/>
+                <Label x:Name="txtCapital" Text="{Binding pcapital}" TextColor="Black"/>
+                <Label x:Name="txtzona"  Text="{Binding zonah2}" TextColor="Black"/>
+                <Label x:Name="txtpob"  Text="{Binding poblacion}" TextColor="Black" IsVisible="False"/>
+                <Label x:Name="txtarea"  Text="{Binding area2}" TextColor="Black"/>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
