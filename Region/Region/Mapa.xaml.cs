@@ -34,8 +34,8 @@ namespace Region
 
             Pin pin = new Pin
             {
-                Label = "Pais:"+NombreP,
-                Address = "Capital" + CapitalP + " Poblacion"+ Pobla, 
+                Label = "Pais : "+NombreP,
+                Address = "Capital : " + CapitalP + " Poblacion : "+ Pobla, 
                 Type = PinType.Place,
                 Position = new Position(Latitud, Longitud)
             };

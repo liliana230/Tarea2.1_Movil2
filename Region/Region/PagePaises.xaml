@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             BackgroundImageSource="fon.png"
              x:Class="Region.PagePaises">
 
     <ContentPage.Resources>
@@ -12,17 +13,16 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="Yellow" Padding="24" CornerRadius="0">
-                <Label Text="Ejercicio 2.1" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"></Label>
+            <Frame BackgroundColor="LightGoldenrodYellow" Padding="5" CornerRadius="0" Opacity="0.8" >
+                <Label Text="Continentes y Sus Paises" HorizontalTextAlignment="Center"  TextColor="Black" FontSize="45" Style="{StaticResource Font-2}"></Label>
             </Frame>
-            <Image Source="https://www.uth.hn/wp-content/uploads/2019/12/logo-1.png" HorizontalOptions="Center" />
+            <Image Source="uth.png" HorizontalOptions="Center" />
 
-            <Label Text="Grupo 2 Programación Móvil II" HorizontalOptions="CenterAndExpand" Margin="0,30,0,0" FontSize="Large"/>
-            <Label Text="Spinner de Continentes" HorizontalOptions="CenterAndExpand" FontSize="15"/>
+            <Label Text="Continentes" TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="40" Style="{StaticResource Font-2}"/>
 
-            <Picker x:Name="PicketPais" Margin="0,40,0,0" SelectedIndexChanged="PicketPais_SelectedIndexChanged" Title="Seleccione un Continente" 
-             HorizontalOptions="Center" WidthRequest="300">
-                <Picker.ItemsSource>
+            <Picker x:Name="PicketPais" Margin="0,45,0,0" Background="LightGoldenrodYellow" SelectedIndexChanged="PicketPais_SelectedIndexChanged" Title="Seleccione un Continente"           
+                HorizontalOptions="Center" WidthRequest="300" TextColor="Black" Style="{StaticResource Font-1}">
+                <Picker.ItemsSource >
                     <x:Array Type="{x:Type x:String}">
                         <x:String>OCEANIA</x:String>
                         <x:String>AFRICA</x:String>
@@ -39,7 +39,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >
-                            <Grid>
+                            <Grid BackgroundColor="#EAF3FB" >
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
                                 </Grid.RowDefinitions>
@@ -47,14 +47,14 @@
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
-                                <!--editardiseño-->
+
+                                <Label Text="{Binding name.common}" Style="{StaticResource Font-1}" HeightRequest="50" FontSize="17" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
                                 <ffimageloadingsvg:SvgCachedImage Source="{Binding flags.svg}"
                                 LoadingPlaceholder = "Flag"
-                                            ErrorPlaceholder= "Error"
-                                            Margin="5"
-                                            CacheDuration= "30"
-                                            RetryCount= "5"
-                                            RetryDelay= "450"
+                                            Margin="10"
+                                            CacheDuration= "35"
+                                            RetryCount= "6"
+                                            RetryDelay= "500"
                                             DownsampleToViewSize = "true"
                                                              Grid.Column="0"
                                                              Grid.Row="0"/>

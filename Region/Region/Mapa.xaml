@@ -6,15 +6,15 @@
     <ContentPage.Content>
         <StackLayout>
             <maps:Map x:Name="Maps" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" IsShowingUser="True"/>
-            <FlexLayout>
-                <Label x:Name="txtLati"  Text="{Binding latitud}" TextColor="Black" IsVisible="False"/>
-                <Label x:Name="txtLong"  Text="{Binding longitud}" TextColor="Black" IsVisible="False"/>
-                <Label x:Name="txtNomp"  Text="{Binding nombre}" TextColor="Black"/>
-                <Label x:Name="txtCapital" Text="{Binding pcapital}" TextColor="Black"/>
-                <Label x:Name="txtzona"  Text="{Binding zonah2}" TextColor="Black"/>
-                <Label x:Name="txtpob"  Text="{Binding poblacion}" TextColor="Black" IsVisible="False"/>
-                <Label x:Name="txtarea"  Text="{Binding area2}" TextColor="Black"/>
-            </FlexLayout>
+            
+            
+            <Label x:Name="txtLati"  Text="{Binding latitud}" TextColor="Black" IsVisible="False" Margin="15"/>
+            <Label x:Name="txtLong"  Text="{Binding longitud}" TextColor="Black" IsVisible="False" Margin="15"/>
+            <Label x:Name="txtNomp"  Text="{Binding nombre}" TextColor="Black" Margin="15"/>
+            <Label x:Name="txtCapital" Text="{Binding pcapital}" TextColor="Black" Margin="15"/>
+            <Label x:Name="txtzona"  Text="{Binding zonah2}" TextColor="Black" Margin="15"/>
+            <Label x:Name="txtpob"  Text="{Binding poblacion}" TextColor="Black" Margin="15" IsVisible="False"/>
+            <Label x:Name="txtarea"  Text="{Binding area2}" TextColor="Black" Margin="15"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

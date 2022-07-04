@@ -4,5 +4,22 @@
              x:Class="Region.App">
     <Application.Resources>
 
+        <ResourceDictionary>
+            <Style x:Key="Font-1" TargetType="Label">
+            <Setter Property="Label.FontFamily">
+                <OnPlatform  x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="DelmonDelicate.ttf#Delmon Delicate"></On>
+                </OnPlatform>
+            </Setter>
+            </Style>
+
+            <Style x:Key="Font-2" TargetType="Label">
+                <Setter Property="Label.FontFamily">
+                    <OnPlatform  x:TypeArguments="x:String">
+                        <On Platform ="Android" Value="HarlandRoselyn.ttf#Harland Roselyn"></On>
+                    </OnPlatform>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

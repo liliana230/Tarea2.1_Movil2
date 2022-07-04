@@ -25,7 +25,7 @@ namespace Region
             String nombrepais = datos.name.common;
             String capitalpais = datos.capital[0];
             String area = datos.area.ToString();
-            String zonah = datos.timezones.ToString();
+            String zonah = datos.timezones[0].ToString();
             Double Lat = datos.latlng[0];
             Double Long = datos.latlng[1];
             String pob = datos.population.ToString();

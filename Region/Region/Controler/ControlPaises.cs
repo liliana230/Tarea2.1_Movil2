@@ -55,7 +55,7 @@ namespace Region.Controler
 
             using (HttpClient client = new HttpClient())
             {
-                var response = await client.GetAsync("https://restcountries.com/v3.1/region/Europa");
+                var response = await client.GetAsync("https://restcountries.com/v3.1/region/Europe");
                 if (response.IsSuccessStatusCode)
                 {
                     var contenido = response.Content.ReadAsStringAsync().Result;
