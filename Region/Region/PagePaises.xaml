@@ -51,12 +51,12 @@
                                 <Label Text="{Binding name.common}" Style="{StaticResource Font-1}" HeightRequest="50" FontSize="17" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
                                 <ffimageloadingsvg:SvgCachedImage Source="{Binding flags.svg}"
                                 LoadingPlaceholder = "Flag"
-                                            Margin="10"
+                                            Margin="2"
                                             CacheDuration= "35"
                                             RetryCount= "6"
                                             RetryDelay= "500"
                                             DownsampleToViewSize = "true"
-                                                             Grid.Column="0"
+                                                             Grid.Column="1"
                                                              Grid.Row="0"/>
                                 
                             </Grid>

@@ -44,7 +44,7 @@ namespace Region
             var page = new Mapa();
             page.BindingContext = ubi;
             //await Navigation.PushAsync(page);
-            await Navigation.PushAsync(new NavigationPage(page));
+            await Navigation.PushAsync(page);
 
 
         }

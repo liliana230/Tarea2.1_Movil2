@@ -18,6 +18,7 @@ namespace Region.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Xamarin.FormsMaps.Init(this, savedInstanceState);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+            FFImageLoading.Svg.Forms.SvgCachedImage.Init();
             LoadApplication(new App());
             if (CheckSelfPermission(Manifest.Permission.AccessCoarseLocation) != (int)Permission.Granted)
             {
